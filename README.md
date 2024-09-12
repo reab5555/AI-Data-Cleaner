@@ -3,8 +3,6 @@
 # Data Cleaning and Preparation Tool
 This project focuses on automating the initial steps of data preparation using LLM to provide smart, context-aware data cleaning. While it can handle the primary cleaning tasks, its goal is to prepare data for more in-depth and complex transformations downstream.
 
-<img src="appendix/flow.png" width=500 height="auto">
-
 ## Features
 - **Column Header Normalization**: Auto-corrects and standardizes column headers.
 - **Empty Data Removal**: Prunes columns and rows with substantial missing values.
@@ -13,6 +11,8 @@ This project focuses on automating the initial steps of data preparation using L
 - **Typo Detection and Correction**: Spot and fix potential typos in string columns.
 - **Outlier Removal**: Identifies and removes outliers from numeric columns.
 - **Visualization Reports**: Generates detailed reports to visualize data before and after cleaning.
+
+<img src="appendix/flow.png" width=450 height="auto">
 
 ## Advantages
 Using LLMs with prompts over traditional methods like Pandas or Spark offers several benefits:   
