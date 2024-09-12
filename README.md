@@ -1,7 +1,9 @@
-  <img src="appendix/icon.webp" width=100 height="auto">
+<img src="appendix/icon.webp" width=100 height="auto">
 
 # Data Cleaning and Preparation Tool
 This project focuses on automating the initial steps of data preparation using LLM to provide smart, context-aware data cleaning. While it can handle the primary cleaning tasks, its goal is to prepare data for more in-depth and complex transformations downstream.
+
+<img src="appendix/flow.png" width=500 height="auto">
 
 ## Features
 - **Column Header Normalization**: Auto-corrects and standardizes column headers.
