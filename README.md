@@ -14,6 +14,22 @@ This project focuses on automating the initial steps of data preparation using L
 
 <img src="appendix/flow.png" width=450 height="auto">
 
+#### How Batch Processing Works
+1. **Divide Data into Chunks**: Split the data into manageable batches (e.g., 10,000 rows per batch).
+2. **Process Each Chunk**: Apply cleaning functions to each batch individually.
+3. **Merge Results**: Combine the cleaned batches back into a single dataset.
+
+#### Inferring Column Schemas
+The tool uses LLM's understanding of data patterns and statistical methods to infer column schemas:
+
+1. **Sampling**: Within each batch, sample data points to get a representative understanding of the column.
+2. **Analyze Data Types**:
+   - **Numeric Columns**: Check if data follows numeric patterns and enforce numeric types (e.g., integer, float).
+   - **Categorical Columns**: Observe different unique values to determine categorical types.
+   - **String Columns**: Identify consistent string patterns, fix typos, and normalize values.
+3. **Contextual Inference**: LLMs help in understanding contextual clues from headers and existing data to predict the most appropriate data types.
+4. **Consistency Check**: Ensure uniform data types and schemas are maintained across batches.
+   
 ## Advantages
 Using LLMs with prompts over traditional methods offers several benefits:   
 - **Intuitive and Context-Aware**: LLMs understand the context and provide intelligent suggestions.   
