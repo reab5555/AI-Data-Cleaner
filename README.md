@@ -15,7 +15,7 @@ This project focuses on automating the initial steps of data preparation using L
 <img src="appendix/flow.png" width=450 height="auto">
 
 #### How Batch Processing Works
-1. **Divide Data into Chunks**: Split the data into manageable batches (e.g., 10,000 rows per batch).
+1. **Divide Data into Chunks**: Split the data into manageable batches (e.g., 10,000 rows per batch) to avoid token limit.
 2. **Process Each Chunk**: Apply cleaning functions to each batch individually.
 3. **Merge Results**: Combine the cleaned batches back into a single dataset.
 
