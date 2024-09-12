@@ -15,7 +15,7 @@ This project focuses on automating the initial steps of data preparation using L
 <img src="appendix/flow.png" width=450 height="auto">
 
 ## Advantages
-Using LLMs with prompts over traditional methods like Pandas or Spark offers several benefits:   
+Using LLMs with prompts over traditional methods offers several benefits:   
 - **Intuitive and Context-Aware**: LLMs understand the context and provide intelligent suggestions.   
 - **Flexible and Adaptive**: Adapts to various data structures and types without hardcoding.   
 - **Reduced Manual Effort**: Automated processes save time and reduce manual interventions.   
