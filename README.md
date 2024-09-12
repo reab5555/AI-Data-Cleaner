@@ -1,39 +1,35 @@
 # Data Cleaning and Preparation Tool
-This AI-powered tool is designed to streamline the initial stages of data preprocessing, making datasets ready for further, more complex transformations. This tool leverages the power of Large Language Model (LLM) with tailored prompts to provide a more intuitive and efficient cleaning process compared to traditional methods.
+## Description
+
+This project focuses on automating the initial steps of data preparation using LLMs to provide smart, context-aware data cleaning. While it can handle the primary cleaning tasks, its mission is to prepare data for more in-depth and complex transformations downstream.
 
 ## Features
-- **Column Header Normalization**: Automatically checks and normalizes column headers to ensure they are valid identifiers.
-- **Empty Data Removal**: Removes columns and rows with a significant amount of missing data.
-- **Low Count Category Removal**: Cleans categorical columns by removing infrequent values.
-- **Data Type Enforcement**: Determines and enforces appropriate data types for each column.
-- **Typo Detection and Correction**: Identifies and corrects potential typos in string columns.
-- **Outlier Removal**: Detects and removes outliers from numeric columns.
-- **Visualization Reports**: Generates comprehensive reports that visualize the state of the data before and after cleaning.
+- **Column Header Normalization**: Auto-corrects and standardizes column headers.
+- **Empty Data Removal**: Prunes columns and rows with substantial missing values.
+- **Low Count Category Removal**: Cleans categorical columns by eliminating infrequent values.
+- **Data Type Enforcement**: Determines and enforces appropriate data types for columns.
+- **Typo Detection and Correction**: Spot and fix potential typos in string columns.
+- **Outlier Removal**: Identifies and removes outliers from numeric columns.
+- **Visualization Reports**: Generates detailed reports to visualize data before and after cleaning.
+
+## Advantages
+Using LLMs with prompts over traditional methods like Pandas or Spark offers several benefits:   
+1. **Intuitive and Context-Aware**: LLMs understand the context and provide intelligent suggestions.   
+2. **Flexible and Adaptive**: Adapts to various data structures and types without hardcoding.   
+3. **Reduced Manual Effort**: Automated processes save time and reduce manual interventions.   
+4. **Enhanced Error Detection**: Detects and corrects subtle errors and inconsistencies.   
+5. **Scalability**: Efficiently handles large datasets by processing data in batches.  
 
 ## Steps of Data Cleaning
-1. **Normalize Column Headers**: Check and normalize column headers to follow a consistent naming convention.
+1. **Normalize Column Headers**: Ensure consistent and valid column names.
 2. **Remove Empty Columns**: Drop columns with less than 60% valid data.
 3. **Remove Empty Rows**: Drop rows with less than 60% valid data.
-4. **Remove Low Count Categories**: Remove infrequent categorical values in string columns.
-5. **Clean Columns**: Process each column in batches to identify and handle non-conforming cells.
+4. **Remove Low Count Categories**: Clean categorical columns by removing infrequent values.
+5. **Clean Columns**: Process each column in batches and handle non-conforming cells.
 6. **Remove Outliers**: Detect and remove outliers from numeric columns.
 
-## Advantages of Using LLMs with Prompts
-### Compared to Pandas or Spark:
-1. **Intuitive and Context-Aware**: It can provide context-aware suggestions for data cleaning, understanding the intent behind the data structure and common issues.
-2. **Flexible and Adaptive**: It adapt to various data structures and types, providing flexible solutions without hardcoding rules.
-3. **Reduced Manual Effort**: Prompts automate several tedious tasks, reducing the need for manual interventions and custom scripts.
-4. **Enhanced Error Detection**: It can identify and correct subtle errors, such as typos and inconsistent categories, which traditional methods might overlook.
-5. **Scalability**: The tool can handle large datasets efficiently by processing data in batches, making it suitable for big data applications.
-
 ## Benefits
-- **Time-Saving**: Automates repetitive and time-consuming data cleaning tasks.
-- **Improved Data Quality**: Ensures that the data is clean and well-prepared for further analysis or transformation.
-- **Comprehensive Reports**: Provides visual insights into the cleaning process and the state of the data, aiding in better decision-making.
-- **Ease of Use**: Simplifies the data cleaning process, making it accessible to users with varying levels of expertise in data science.
-
-## Usage
-To use this tool, follow these steps:
-1. **Clone the Repository**: Clone this repository to your local machine.
-2. **Install Dependencies**: Install the required dependencies using `pip install -r requirements.txt`.
-3. **Run the Cleaning Script**: Execute the `main.py` script to clean your data and generate a report.
+- **Time-Saving**: Automates repetitive data cleaning tasks.
+- **Improved Data Quality**: Ensures data is clean and ready for analysis.
+- **Comprehensive Reports**: Visual insights aid better decision-making.
+- **Ease of Use**: Simplifies data cleaning, accommodating various user expertise levels.
