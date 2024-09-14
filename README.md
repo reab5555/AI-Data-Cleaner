@@ -14,7 +14,7 @@ This project focuses on automating the initial steps of data preparation using L
 - **Outlier Removal**: Identifies and removes outliers from numeric columns.
 - **Visualization Reports**: Generates detailed reports to visualize data before and after cleaning.
 
-<img src="appendix/flow.png" width=450 height="auto">
+<img src="appendix/flow.svg" width=450 height="auto">
 
 #### How Batch Processing Works
 1. **Divide Data into Chunks**: Split the data into manageable batches to avoid token limit.
