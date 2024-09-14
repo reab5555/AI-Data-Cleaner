@@ -44,8 +44,8 @@ Using LLMs with prompts over traditional methods offers several benefits:
 
 ## Steps of Data Cleaning
 1. **Normalize Column Headers**: Ensure consistent and valid column names.
-2. **Remove Empty Columns**: Drop columns with less than 60% valid data.
-3. **Remove Empty Rows**: Drop rows with less than 60% valid data.
+2. **Remove Empty Columns**: Drop columns with less than 50% valid data.
+3. **Remove Empty Rows**: Drop rows with less than 50% valid data.
 4. **Remove Low Count Categories**: Clean categorical columns by removing infrequent values.
 5. **Clean Columns**: Process each column in batches and handle non-conforming cells.
 6. **Remove Outliers**: Detect and remove outliers from numeric columns.
