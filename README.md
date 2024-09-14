@@ -1,6 +1,6 @@
 <img src="appendix/icon.webp" width=100 height="auto">
 
-# Data Cleaning and Preparation Tool
+# AI Data Cleaning and Reporting Tool
 This project focuses on automating the initial steps of data preparation using LLM to provide smart, context-aware data cleaning. While it can handle the primary cleaning tasks, its goal is to prepare small to medium datasets for more in-depth and complex transformations downstream.
 
 [App](https://huggingface.co/spaces/reab5555/Data-Cleaner)
