@@ -14,7 +14,7 @@ from llm_prompts import (
 )
 
 BATCH_SIZE = 50
-EMPTY_THRESHOLD = 0.6
+EMPTY_THRESHOLD = 0.5
 
 
 def print_dataframe_info(df, step=""):
